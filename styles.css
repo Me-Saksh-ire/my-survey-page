@@ -1,0 +1,135 @@
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        padding: 10%;
+    }
+}
+body{
+    background-image: url(https://i.pinimg.com/736x/62/20/14/622014ec793a6c3f561d2ceac40d023b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h1{
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 350px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.hobby {
+    position: relative;
+    width: 500px;
+}
+#dropdown, #drop {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox li{
+    list-style:  none;
+}
+#arrow {
+    position: absolute;
+    top: 85%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 30px;
+    color: #333;
+}
+
+#arrow2 {
+    position: absolute;
+    top: 78%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 30px;
+    color: #333;
+}
+/* Dropdown Menu */
+#hobbies, #cuisine {
+    list-style: none;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.p{
+    text-align: center;
+}
+/* Hidden Menu by Default */
+.hidden, .hide {
+    display: none;
+}
+
+/* Menu Items */
+#hobbies li, #cuisine li {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+#hobbies li:hover, #cuisine li:hover {
+    background-color: #f0f0f0;
+}
+
+textarea{
+    height: 100px;
+    width: 340px;
+    color: #232121;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.submit{
+    margin-top: 5%;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(152, 228, 37);
+} 
+.submit:hover {
+    background-color: rgb(185, 240, 103);  
+}
+.h1{
+    text-shadow: 3px 3px rgb(5, 5, 5);
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(67, 8, 90, 0.5);
+    z-index: -1;
+}
+header{
+    background-color: rgba(66, 90, 136, 0.5);
+    padding: 1%;
+}
