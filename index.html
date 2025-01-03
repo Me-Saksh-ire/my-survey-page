@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   
+    <div class="container">
+         <h1 class="h1">Personal Preferences Survey Form</h1>
+        <p class="p"><i>"We'd like to know more about your preferences to better tailor our recommendations!"</i></p>
+        <h3>Name:</h3>
+        <input type="text" placeholder="Enter Your Name" required><br>
+        <h3>Age Group:</h3>
+        <div class="checkbox">
+            <li><input type="radio" name="Under 18">Under 18</li>
+            <li> <input type="radio" name="18-25">18-25</li>
+            <li><input type="radio" name="26-40">26-40</li>
+            <li><input type="radio" name="41-60">41-60</li>
+            <li><input type="radio" name="60+">60+</li>
+        </div><br>
+        <h3>Gender:</h3>
+        <div class="checkbox">
+            <li><input type="radio" name="gender">Male</li>
+            <li> <input type="radio" name="gender">Female</li>
+            <li> <input type="radio" name="gender">Other</li>
+        </div>
+        <br>
+        <div class="hobby">
+            <h3>Interest & Hobbies</h3>
+            <p>What are your favorite hobbies?</p>
+            <input list="hobby" id="dropdown" placeholder="Select or Type Hobby ">
+            <div id="arrow">&#9662;</div>
+            <ul id="hobbies" class="hidden">
+                <li value="Painting">Painting</li>
+                <li value="Photography">Photography</li>
+                <li value="Gardening">Gardening</li>
+                <li value="Hiking">Hiking</li>
+                <li value="Cooking">Cooking</li>
+                <li value="Writing">Writing</li>
+                <li value="Reading">Reading</li>
+                <li value="Yoga">Yoga</li>
+                <li value="Dancing">Dancing</li>
+                <li value="Gaming">Gaming</li><li value="other">Other</li>
+            </ul>
+        </div>
+
+        <p>How often do you engage in your hobbies?</p>
+        <div class="checkbox">
+            <li><input type="radio" name="Daily">Daily</li>
+            <li><input type="radio" name="weak">Weekly</li>
+            <li><input type="radio" name="occ">Occasionally</li>
+        </div>
+<br>
+        <h3>Food & Beverage</h3>
+        <div class="hobby">
+            <p>What is your favorite cuisine? </p>
+            <input list="cuisine" id="drop" placeholder="Select or Type Cuisine">
+            <div id="arrow2">&#9662;</div>
+            <ul id="cuisine" class="hide">
+                <li>North Indian</li>
+                <li>South Indian</li>
+                <li>East Indian</li>
+                <li>West Indian</li>
+                <li>Italian</li>
+                <li>Chinese</li>
+                <li>French</li>
+                <li>Japanese</li>
+            </ul>
+        </div>
+<br>
+        <h3>Travel Preferences</h3>
+        <p>What type of destinations do you prefer?</p>
+        <div class="checkbox">
+            <li><input type="checkbox" name="Mountains">Mountains</li>
+            <li><input type="checkbox" name="Beaches">Beaches</li>
+            <li><input type="checkbox" name="Cities">Cities</li>
+            <li><input type="checkbox" name="Countryside">Countryside</li>
+        </div>
+<br>
+<input type="text" placeholder="Enter Your Comment Here..." class="Comment"><br>
+<input type="submit"  id="sub" class="submit">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
